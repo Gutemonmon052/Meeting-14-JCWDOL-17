@@ -1,0 +1,493 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(16 24 32);
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+.menu {
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu nav .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.menu nav .dropdown i {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 122px;
+  height: 32px;
+}
+
+.mobile-mode-on {
+  display: none;
+}
+
+.mobile-mode-menus {
+  display: none;
+}
+
+.menu nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu nav a[href] {
+  font-family: "Maison Neue Demi";
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+}
+
+.mobile-mode-off {
+  display: none;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+.sec1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgb(16 24 32);
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-content img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.jumbotron-content1 {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron-content1 h1 {
+  width: 65%;
+  font-family: "Maison Neue Extended Bold";
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.8px;
+}
+
+.sec2 {
+  position: relative;
+  background-color: rgb(16 24 32);
+  padding-top: 60px;
+  padding-bottom: 30px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-sec2 h2,
+.content-sec4 h2 {
+  font-family: "Maison Neue Extended Bold";
+  font-size: 44px;
+  margin: 0;
+  letter-spacing: 0.8px;
+  line-height: 64px;
+}
+
+.content-sec2 h2 {
+  color: #fff;
+}
+
+.content1-sec2,
+.content1-sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  height: 44px;
+  width: max-content;
+  font-family: "Maison Neue Demi";
+  font-size: 16px;
+  background-color: rgb(0, 136, 13);
+  border-radius: 96px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sec3 {
+  position: relative;
+}
+
+.container-sec3 {
+  background-color: rgb(16, 24, 32);
+  align-items: flex-end;
+  width: 100%;
+  height: 166px;
+  top: 0;
+  display: flex;
+  position: absolute;
+  z-index: 0;
+}
+
+.content1-sec3 {
+  background-color: #fff;
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  width: 100%;
+  height: 96px;
+}
+
+.container2-sec3 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.content2-sec3 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  z-index: 2;
+}
+
+.content21-sec3 {
+  width: 265.5px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.content21-sec3 h3,
+.content21-sec3 p {
+  margin: 0;
+  text-align: center;
+}
+
+.content21-sec3 h3 {
+  font-family: "Maison Neue Demi";
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.content21-sec3 p {
+  font-family: "Maison Neue Book";
+  font-size: 17px;
+  padding-top: 3px;
+}
+
+.content21-sec3 img {
+  width: 140px;
+}
+
+.container2-sec4 {
+  display: none;
+}
+
+.sec4 {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-sec4 h2 {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .menu nav {
+    display: none;
+  }
+
+  .menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu img {
+    width: 100px;
+    height: 28.58px;
+  }
+
+  .mobile-mode-on {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mobile-mode-on i {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .mobile-mode-off {
+    display: none;
+    align-items: center;
+    font-family: "Maison Neue Bold";
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .mobile-mode-menus {
+    display: none;
+    flex-direction: column;
+    padding-top: 40px;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(16, 24, 32);
+    gap: 24px;
+  }
+
+  .mobile-mode-menus nav {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-mode-menus nav a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 36px;
+    font-family: "Maison Neue Extended Bold";
+    font-size: 26px;
+  }
+
+  .mobile-mode-menus nav .dropdown i {
+    color: #fff;
+  }
+
+  .sec1 {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-color: rgb(16 24 32);
+  }
+
+  .jumbotron-content1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 180px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .jumbotron-content1 h1 {
+    width: 100%;
+    font-size: 26px;
+  }
+
+  /* .content1-sec2,
+  .content1-sec4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
+  .content-sec2 h2,
+  .content-sec4 h2 {
+    font-family: "Maison Neue Extended Bold";
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+    line-height: 39px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container2-sec3 {
+    display: none;
+  }
+
+  .container2-sec4 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    width: 100% !important;
+  }
+
+  .content2-sec4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    flex-direction: row;
+    transform: translateZ(0);
+  }
+
+  .content21-sec4 {
+    display: none;
+    width: 390px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+    text-align: center;
+  }
+
+  .content21-sec4 h3 {
+    font-family: "Maison Neue Demi";
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    color: black;
+  }
+
+  .content21-sec4 p {
+    font-family: "Maison Neue Book";
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .content21-sec4 img {
+    width: 140px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(16, 24, 32, 0.2);
+  }
+
+  .prev-btn {
+    left: 2px;
+  }
+  .next-btn {
+    right: 2px;
+  }
+
+  .prev-next-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .pagination {
+    position: relative;
+    text-align: center;
+    transition: opacity 0.3s;
+    transform: translateZ(0);
+    z-index: 10;
+    bottom: 8px;
+    bottom: 0;
+    padding-bottom: 48px;
+    width: 100%;
+    top: auto;
+    left: 0;
+  }
+  .page {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background-color: #838383;
+    opacity: 0.8;
+    border-radius: 50%;
+  }
+
+  .active {
+    background-color: #00aa13;
+    opacity: 1;
+  }
+
+  .sec4 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
